@@ -1,7 +1,7 @@
 # Glue Lock for Home Assistant
 
-Home Assistant integration for Glue smart locks. It uses the Glue cloud API through a Glue Hub.
-This is an unofficial project. This project is not made, supported or endorsed by GlueHome.
+Home Assistant integration for Glue smart locks. It uses the Glue cloud API through a Glue Hub.  
+This is an unofficial project. It's not made, supported or endorsed by GlueHome.
 
 ## Features
 
