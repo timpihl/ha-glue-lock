@@ -1,0 +1,84 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Glue Lock",
+        "description": "Home Assistant needs a Glue API key. The key can lock and unlock your door, so keep it secret.",
+        "menu_options": {
+          "credentials": "Sign in to Glue and create a key",
+          "api_key": "Enter an API key that I already have"
+        }
+      },
+      "credentials": {
+        "title": "Sign in to Glue",
+        "description": "Your username and password are sent to Glue once, to create an API key named \"home-assistant\". Only the key is stored. Glue allows 10 API keys per account.",
+        "data": {
+          "username": "Username",
+          "password": "Password"
+        }
+      },
+      "api_key": {
+        "title": "Glue API key",
+        "description": "The key needs the scopes events.read, locks.read and locks.write.",
+        "data": {
+          "api_key": "API key"
+        }
+      },
+      "reauth_confirm": {
+        "title": "New Glue API key",
+        "description": "Glue no longer accepts the API key. Enter a new key.",
+        "data": {
+          "api_key": "API key"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Glue did not accept the credentials.",
+      "cannot_connect": "Could not talk to the Glue API. Try again later."
+    },
+    "abort": {
+      "already_configured": "This Glue account is already set up.",
+      "reauth_successful": "The new API key is saved."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Glue Lock options",
+        "data": {
+          "poll_interval": "Time between status reads",
+          "fast_poll_after_operation": "Read every 5 seconds for 60 seconds after a lock or unlock"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "connection_status": {
+        "name": "Connection",
+        "state": {
+          "connected": "Connected",
+          "busy": "Busy",
+          "disconnected": "Disconnected",
+          "offline": "Offline"
+        }
+      },
+      "last_event": {
+        "name": "Last event",
+        "state": {
+          "press_and_go": "Locked with press and go",
+          "local_lock": "Locked locally",
+          "manual_lock": "Locked by hand",
+          "remote_lock": "Locked remotely",
+          "local_unlock": "Unlocked locally",
+          "manual_unlock": "Unlocked by hand",
+          "remote_unlock": "Unlocked remotely",
+          "unknown": "Unknown"
+        }
+      },
+      "last_event_time": {
+        "name": "Last event time"
+      }
+    }
+  }
+}

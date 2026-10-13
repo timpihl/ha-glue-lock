@@ -1,0 +1,11 @@
+Glue Lock for Home Assistant
+Copyright 2026 Tim Pihlström
+
+This integration is a new implementation in Python. Its behaviour (the Glue
+API calls, the mapping from lock events to lock state and the polling rules)
+follows two Homebridge plugins, both licensed under the Apache License 2.0:
+
+  - GlueHome/homebridge-plugin, by GlueHome
+  - MatsCedergren/homebridge-glue-lock-v2, by Mats Cedergren
+
+This project is not made, supported or endorsed by GlueHome.

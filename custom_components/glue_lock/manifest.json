@@ -1,0 +1,12 @@
+{
+  "domain": "glue_lock",
+  "name": "Glue Lock",
+  "codeowners": ["@timpihl"],
+  "config_flow": true,
+  "documentation": "https://github.com/timpihl/ha-glue-lock",
+  "integration_type": "hub",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/timpihl/ha-glue-lock/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}
